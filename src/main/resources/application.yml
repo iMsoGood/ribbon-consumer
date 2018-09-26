@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: ribbon-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      #服务注册的地址
+      defaultZone: http://localhost:8761/eureka/
+#是否开启阻断器
+hystrix:
+  metrics:
+    enabled: true
